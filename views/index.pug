@@ -1,0 +1,50 @@
+html
+    head
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        title= title
+        style
+            include style.css
+    body
+    
+        h1 heyy
+        div(id="main")
+            div(id="weather_container")
+                -for (var i = 0; i < temperatureList.length; i++)
+                    div(class="hidden")
+                        -for (var y = 0; y < temperatureList[i].length; y++)
+                            p(class="temp")= temperatureList[i][y] + " °C"
+                            p(class="time")= timeList[i][y]
+
+
+                        
+                        
+    //-                
+            -for (var i = 0; i < temperatureList.length; i++)
+                div(class="weather-container")
+                    p(class="temp")= temperatureList[1][i] + " °C"
+                    p(class="time")= timeList[1][i]
+            -for (var i = 0; i < temperatureList.length; i++)
+                div(class="weather-container")
+                    p(class="temp")= temperatureList[2][i] + " °C"
+                    p(class="time")= timeList[2][i]
+            -for (var i = 0; i < temperatureList.length; i++)
+                div(class="weather-container")
+                    p(class="temp")= temperatureList[3][i] + " °C"
+                    p(class="time")= timeList[3][i]
+            -for (var i = 0; i < temperatureList.length; i++)
+                div(class="weather-container")
+                    p(class="temp")= temperatureList[4][i] + " °C"
+                    p(class="time")= timeList[4][i]
+            -for (var i = 0; i < temperatureList.length; i++)
+                div(class="weather-container")
+                    p(class="temp")= temperatureList[5][i] + " °C"
+                    p(class="time")= timeList[5][i]
+    
+    div(id="button")
+        button(id="previous")
+            p <
+
+        button(id="next")
+            p >
+
+    script(src="scr.js") 

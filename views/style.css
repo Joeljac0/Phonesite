@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(#32C3BB, #2A1E5C);
+
+}
+
+h1 {
+    font-size: 10px;
+}
+
+#main p {
+    color: #2C0735;
+}
+
+.weather_container {
+    background-color: rgb(212, 184, 93);
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+@media screen and (max-width: 600px)
+{
+    h1 {
+        font-size: 100px;
+    }
+}
