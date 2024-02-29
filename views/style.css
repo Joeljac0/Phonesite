@@ -11,7 +11,7 @@ h1 {
     color: #2C0735;
 }
 
-.weather_container {
+#weather_container {
     background-color: rgb(212, 184, 93);
     margin: 20px;
     display: flex;
@@ -23,7 +23,8 @@ h1 {
 }
 
 .shown {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 600px)

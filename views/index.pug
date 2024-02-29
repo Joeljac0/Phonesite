@@ -41,10 +41,11 @@ html
                     p(class="time")= timeList[5][i]
     
     div(id="button")
-        button(id="previous")
+        button(id="previous" onclick="prev_day()")
             p <
 
-        button(id="next")
+        button(id="next" onclick="next_day()")
+            
             p >
-
-    script(src="scr.js") 
+    script 
+        include scr.js
